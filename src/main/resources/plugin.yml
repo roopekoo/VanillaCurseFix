@@ -1,0 +1,7 @@
+name: VanillaCurseFix
+version: ${project.version}
+main: me.roopekoo.vanillacursefix.VanillaCurseFix
+api-version: 1.16
+prefix: VanillaCurseFix
+authors: [ Roopekoo ]
+description: On player death, curse of binding armor or skull items are dropped to the ground and curse of vanishing items will be removed from the inventory while the keepInventory is true.
