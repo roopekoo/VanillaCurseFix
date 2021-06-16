@@ -13,12 +13,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class VanillaCurseFix extends JavaPlugin implements Listener {
 
 	@Override public void onEnable() {
-		System.out.println("VanillaCurseFix starting up.");
+		Bukkit.getConsoleSender().sendMessage("VanillaCurseFix starting up.");
 		Bukkit.getServer().getPluginManager().registerEvents(this, this);
 	}
 
 	@Override public void onDisable() {
-		System.out.println("VanillaCurseFix shut down.");
+		Bukkit.getConsoleSender().sendMessage("VanillaCurseFix shut down.");
 	}
 
 	@EventHandler public void onDeath(PlayerDeathEvent event) {
