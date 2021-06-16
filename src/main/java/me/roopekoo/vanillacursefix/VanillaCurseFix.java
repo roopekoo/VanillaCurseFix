@@ -40,7 +40,7 @@ public final class VanillaCurseFix extends JavaPlugin implements Listener {
             if ((i >= 36) && (i < 40)) {
                 if (item.containsEnchantment(Enchantment.BINDING_CURSE)) {
                     player.getInventory().clear(i);
-                    world.dropItem(player.getLocation(), item).setPickupDelay(40);
+                    world.dropItem(player.getLocation(), item).setOwner(player.getUniqueId());
                 }
             }
         }
